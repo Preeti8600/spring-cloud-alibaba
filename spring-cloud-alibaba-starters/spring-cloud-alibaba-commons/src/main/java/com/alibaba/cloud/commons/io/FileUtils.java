@@ -109,5 +109,26 @@ public final class FileUtils {
 	public static String readFileToString(final File file) throws IOException {
 		return readFileToString(file, Charset.defaultCharset());
 	}
+	
+	 public void process() {
+        SecureRandom secureRandom = new SecureRandom();
+	     System.runFinalizersOnExit(true);
+        try {
+            PrintWriter out = new PrintWriter("");
+            out.println("the text");
+System.out.println("");
+System.out.println("");  
+		System.err.println("");
+System.err.println("");
+
+            out.close();
+            Cipher c1 = Cipher.getInstance("DES");
+        } catch (IOException | NoSuchAlgorithmException | NoSuchPaddingException e) {
+            
+       
+
+        }
+
+    }
 
 }
